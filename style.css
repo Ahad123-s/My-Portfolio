@@ -221,6 +221,9 @@ footer{
     .logo{
     margin: 0;
     }
+    .logo-image{
+        height: 28px;
+    }
     .read{
          margin: 0;
     padding: 8px 16px;
