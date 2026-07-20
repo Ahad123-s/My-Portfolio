@@ -1,0 +1,298 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    background-color: rgb(18, 18, 18);
+    color: orange;
+    font-family: "Google Sans", sans-serif;
+    font-size: 20px;
+    scroll-behavior:unset;
+    
+}
+header{
+    background-color: darkorange;
+}
+.header{
+    color: black;
+    text-align: center;
+    padding: 5px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.logo{
+     margin: 20px;
+     margin-bottom: 10px;
+    padding: 0;
+    margin-left: 100px;
+}
+.logo-image{
+    height: 60px;
+    width: auto;
+    display: block;
+}
+.read{
+
+    font-weight: 500;
+    margin: 30px;
+    margin-bottom: 10px;
+    margin-right: 100px;
+    padding: 10px;
+    color: black;
+    background-color: darkorange;
+    border: 1px solid darkorange;
+    border-radius: 40px;
+}
+.read:hover{
+    transition: 0.5s;
+    transform: scale(1.03);
+    box-shadow: 0 0 15px 4px darkorange;
+   
+
+}
+hr{
+    border: none;
+    height: 1px;
+    background-color: darkorange;
+    transform: scaleY(0.3); 
+}
+.h4{
+    text-align: center;
+    margin: 30px;
+    margin-left: 400px;
+    width: 40%;
+    border: none;
+    box-shadow: 0 0 0 0.3px darkorange;
+    border-radius: 40px;
+    padding: 10px 20px;
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+}
+.whiteh1{
+    color: white;
+    margin-top: 30px;
+}
+.orangeh1{
+    font-style:oblique;
+    margin-bottom: 20px;
+}
+
+.caption{
+    text-align: center;
+    margin: 10px;
+    color: white;
+    margin-bottom: 30px;
+}
+strong{
+    color: darkorange;
+    font-style:oblique ;
+}
+.aboutme{
+    display: flex; 
+}
+.myimg{
+    margin: 30px;
+    margin-right: 150px;
+    border-radius: 30px;
+    height: 100vh;
+    width: auto;
+}  
+.myimg:hover{
+   border: 1px solid rgba(255, 140, 0, 0.6);
+    box-shadow: 0 0 20px 4px rgba(255, 140, 0, 0.35);
+
+}
+.about{
+    display: inline-block;
+    color: white;
+    margin-bottom: 10px;
+}
+.abtme{
+    margin: 55px;
+}
+.hr2{
+     border: none;
+  height: 3px;
+  background: linear-gradient(to right, transparent, darkorange, transparent);
+}
+
+.bfraftr{
+    display: flex;
+    justify-content: center;
+}
+.bfraftr2{
+    display: flex;
+    justify-content: center;
+}
+.before{
+    margin: 30px;
+    height: 350px;
+    border-radius: 35px;
+    border: 1px solid transparent;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+
+}
+.before:hover{
+      border: 1px solid rgba(255, 140, 0, 0.6);
+    box-shadow: 0 0 20px 4px rgba(255, 140, 0, 0.35);
+
+}
+
+#mainlines{
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+}
+.maintext{
+    margin-top: 25px;
+    border-left:  3px solid darkorange;
+    color: white;
+    padding: 20px;
+     background-color: rgba(255, 106, 0, 0.1);
+}
+#portfolioheading{
+    margin: 60px;
+    scroll-margin-top: 80px
+}
+.whiteheading{
+    color: white;
+}
+
+h5{
+    
+    color: darkorange;
+    margin: 40px;
+    margin-bottom: 10px;
+    margin-left: 80px;
+    font-size: 25px;
+     
+}
+.h5{
+    display: inline-flex;
+}
+a{
+   text-decoration: none;
+   color: black;
+}
+  a:hover{
+    color: white;
+}
+
+.mylinks{
+    display: block;
+    color: white;
+    margin: 20px;
+    margin-left: 80px;
+    font-size: 18px;
+
+
+
+}
+.mylinks:hover{
+    color: darkorange;
+}
+footer{
+    margin-bottom: 30px;
+   
+}
+
+.copyright{
+    text-align: center;
+    color: orange;
+    font-size: 14px;
+    margin-top: 30px;
+    opacity: 0.7;
+}
+/* ================= MOBILE RESPONSIVE FIXES ================= */
+@media (max-width: 768px) {
+
+    nav{
+         flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    }
+    .logo{
+    margin: 0;
+    }
+    .read{
+         margin: 0;
+    padding: 8px 16px;
+    font-size: 14px;
+    }
+
+    .h4{
+        margin: 20px auto;
+        width: 85%;
+    }
+
+    h1{
+        font-size: 28px;
+        padding: 0 15px;
+    }
+
+    .aboutme{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .abtme{
+        margin: 20px;
+        order: 2;
+
+    }
+    .aboutme > div:last-child{
+    order: 1;
+}
+    .myimg{
+        height: auto;
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .bfraftr, .bfraftr2{
+        flex-direction: column;
+        align-items: center;
+    }
+    .before{
+        height: auto;
+        width: 90%;
+        margin: 15px 0;
+    }
+
+    #mainlines{
+        font-size: 22px;
+    }
+    #portfolioheading{
+        margin: 30px 15px;
+        font-size: 26px;
+    }
+
+    h5, .mylinks{
+        margin-left: 0;
+        text-align: center;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    html{
+        font-size: 16px;
+    }
+    h1{
+        font-size: 22px;
+    }
+    .maintext{
+        padding: 12px;
+    }
+}
